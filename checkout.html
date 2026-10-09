@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | ABCBook</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="main-header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg py-3">
+
+            <!-- Logo -->
+            <a class="navbar-brand logo" href="index.html">
+                <i class="bi bi-book"></i>
+                <span>ABC<span>Book</span></span>
+            </a>
+
+            <!-- Mobile menu -->
+            <details class="mobile-menu d-lg-none">
+                <summary>
+                    <i class="bi bi-list"></i>
+                </summary>
+
+                <div class="mobile-menu-content">
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="product.html">Book</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </details>
+
+            <!-- Desktop navigation -->
+            <div class="desktop-nav d-none d-lg-flex ms-auto align-items-center">
+
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="product.html">Book</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+                <a href="#search-panel" class="nav-icon">
+                    <i class="bi bi-search"></i>
+                </a>
+
+                <a href="cart.html" class="nav-icon">
+                    <i class="bi bi-bag"></i>
+                </a>
+
+            </div>
+
+        </nav>
+    </div>
+</header>
+
+
+<!-- ================= PAGE BANNER ================= -->
+
+<section class="inner-banner">
+    <div class="container text-center">
+
+        <p class="small-title">ABCBOOK</p>
+
+        <h1>Checkout</h1>
+
+        <div class="breadcrumb-area">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="cart.html">Cart</a>
+            <span>/</span>
+            <span>Checkout</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= CHECKOUT ================= -->
+
+<section class="checkout-section section-padding">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+            <!-- ================= BILLING DETAILS ================= -->
+
+            <div class="col-lg-7">
+
+                <div class="checkout-box">
+
+                    <h3 class="checkout-title">
+                        Billing Details
+                    </h3>
+
+                    <form>
+
+                        <div class="row g-4">
+
+                            <!-- First Name -->
+                            <div class="col-md-6">
+
+                                <label for="firstName">
+                                    First Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="firstName"
+                                    class="form-control custom-input"
+                                    placeholder="First Name"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Last Name -->
+                            <div class="col-md-6">
+
+                                <label for="lastName">
+                                    Last Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="lastName"
+                                    class="form-control custom-input"
+                                    placeholder="Last Name"
+                                    required>
+
+                            </div>
+
+
+                            <!-- Country -->
+                            <div class="col-12">
+
+                                <label for="country">
+                                    Country
+                                </label>
+
+                                <select
+                                    id="country"
+                                    class="form-select custom-input">
+
+                                    <option selected>
+                                        India
+                                    </option>
+
+                                    <option>
+                                        United States
+                                    </option>
+
+                                    <option>
+                                        United Kingdom
+                                    </option>
+
+                                    <option>
+                                        Canada
+                                    </option>
+
+                                    <option>
+                                        Australia
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Address -->
+                            <div class="col-12">
+
+                                <label for="address">
+                                    Street Address
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="address"
+                                    class="form-control custom-input mb-3"
+                                    placeholder="House number and street name">
+
+                                <input
+                                    type="text"
+                                    class="form-control custom-input"
+                                    placeholder="Apartment, suite, unit etc. (optional)">
+
+                            </div>
+
+
+                            <!-- City -->
+                            <div class="col-md-6">
+
+                                <label for="city">
+                                    Town / City
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="city"
+                                    class="form-control custom-input"
+                                    placeholder="City">
+
+                            </div>
+
+
+                            <!-- State -->
+                            <div class="col-md-6">
+
+                                <label for="state">
+                                    State
+                                </label>
+
+                                <select
+                                    id="state"
+                                    class="form-select custom-input">
+
+                                    <option selected>
+                                        Maharashtra
+                                    </option>
+
+                                    <option>
+                                        Karnataka
+                                    </option>
+
+                                    <option>
+                                        Gujarat
+                                    </option>
+
+                                    <option>
+                                        Delhi
+                                    </option>
+
+                                    <option>
+                                        Rajasthan
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- PIN -->
+                            <div class="col-md-6">
+
+                                <label for="pin">
+                                    PIN Code
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="pin"
+                                    class="form-control custom-input"
+                                    placeholder="411001">
+
+                            </div>
+
+
+                            <!-- Phone -->
+                            <div class="col-md-6">
+
+                                <label for="phone">
+                                    Phone
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    class="form-control custom-input"
+                                    placeholder="+91 98765 43210">
+
+                            </div>
+
+
+                            <!-- Email -->
+                            <div class="col-12">
+
+                                <label for="email">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    class="form-control custom-input"
+                                    placeholder="example@gmail.com">
+
+                            </div>
+
+
+                            <!-- Create Account -->
+                            <div class="col-12">
+
+                                <div class="account-option">
+
+                                    <input
+                                        type="checkbox"
+                                        id="createAccount">
+
+                                    <label for="createAccount">
+                                        Create an account?
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Order Notes -->
+                            <div class="col-12">
+
+                                <label for="notes">
+                                    Order Notes
+                                </label>
+
+                                <textarea
+                                    id="notes"
+                                    rows="5"
+                                    class="form-control custom-input"
+                                    placeholder="Notes about your order, e.g. special instructions for delivery."></textarea>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= ORDER SUMMARY ================= -->
+
+            <div class="col-lg-5">
+
+                <div class="order-summary">
+
+                    <h3 class="checkout-title">
+                        Your Order
+                    </h3>
+
+
+                    <!-- Product -->
+
+                    <div class="order-product">
+
+                        <div class="order-image">
+
+                            <img
+                                src="images/books/book-01.jpg"
+                                alt="Book">
+
+                        </div>
+
+                        <div class="order-product-info">
+
+                            <h5>
+                                The History of Philosophy
+                            </h5>
+
+                            <p>
+                                Quantity: 1
+                            </p>
+
+                            <strong>
+                                $18.00
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product -->
+
+                    <div class="order-product">
+
+                        <div class="order-image">
+
+                            <img
+                                src="images/books/book-02.jpg"
+                                alt="Book">
+
+                        </div>
+
+                        <div class="order-product-info">
+
+                            <h5>
+                                The Great Gatsby
+                            </h5>
+
+                            <p>
+                                Quantity: 1
+                            </p>
+
+                            <strong>
+                                $20.00
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Price -->
+
+                    <div class="price-row">
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <strong>
+                            $38.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="price-row">
+
+                        <span>
+                            Shipping
+                        </span>
+
+                        <strong>
+                            Free
+                        </strong>
+
+                    </div>
+
+
+                    <div class="price-row total-row">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong>
+                            $38.00
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Payment -->
+
+                    <h4 class="payment-title">
+                        Payment Method
+                    </h4>
+
+
+                    <div class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            id="bank"
+                            checked>
+
+                        <label for="bank">
+                            Direct Bank Transfer
+                        </label>
+
+                    </div>
+
+
+                    <div class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            id="cod">
+
+                        <label for="cod">
+                            Cash on Delivery
+                        </label>
+
+                    </div>
+
+
+                    <div class="payment-option">
+
+                        <input
+                            type="radio"
+                            name="payment"
+                            id="paypal">
+
+                        <label for="paypal">
+                            PayPal
+                        </label>
+
+                    </div>
+
+
+                    <!-- Place Order -->
+
+                    <a
+                        href="#"
+                        class="btn main-btn w-100 mt-4">
+
+                        PLACE ORDER
+
+                    </a>
+
+                    <p class="secure-payment">
+
+                        <i class="bi bi-shield-check"></i>
+
+                        Secure and encrypted checkout
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <p class="newsletter-small">
+                    NEWSLETTER
+                </p>
+
+                <h2>
+                    Subscribe to our newsletter
+                </h2>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <form class="newsletter-form">
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email">
+
+                    <button type="submit">
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer-section">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+            <!-- About -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <a href="index.html" class="footer-logo">
+                    <i class="bi bi-book"></i>
+                    ABCBook
+                </a>
+
+                <p class="footer-text">
+
+                    A beautiful independent bookstore
+                    bringing readers and great books together.
+
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="bi bi-pinterest"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+
+            <div class="col-lg-2 col-md-6">
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html">
+                            Shop
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Categories -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <h4>
+                    Categories
+                </h4>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="shop.html">
+                            Fiction
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html">
+                            Business
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html">
+                            Romance
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html">
+                            History
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shop.html">
+                            Children's Books
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <h4>
+                    Have a Question?
+                </h4>
+
+                <div class="footer-contact">
+
+                    <p>
+                        <i class="bi bi-geo-alt"></i>
+
+                        203 Fake St. Mountain View,
+                        San Francisco, California
+
+                    </p>
+
+                    <p>
+                        <i class="bi bi-telephone"></i>
+
+                        +2 392 3929 210
+
+                    </p>
+
+                    <p>
+                        <i class="bi bi-envelope"></i>
+
+                        info@abcbook.com
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                Copyright © 2026 ABCBook.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= SEARCH PANEL ================= -->
+
+<div id="search-panel" class="search-panel">
+
+    <a href="#" class="search-close">
+        <i class="bi bi-x-lg"></i>
+    </a>
+
+    <div class="search-content">
+
+        <p>
+            SEARCH
+        </p>
+
+        <h2>
+            Search our books
+        </h2>
+
+        <form>
+
+            <div class="search-input">
+
+                <input
+                    type="text"
+                    placeholder="Search books...">
+
+                <button type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
